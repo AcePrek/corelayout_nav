@@ -1,0 +1,36 @@
+{
+  "name": "expo-core-layout-module",
+  "version": "1.0.0",
+  "description": "Reusable Expo React Native core layout with a primary bottom navbar (UI in one file, logic separated).",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "expo",
+    "react-native",
+    "layout",
+    "navbar",
+    "tabs"
+  ],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "CoreLayout.ui.js",
+    "CoreLayout.logic.js",
+    "CoreLayoutGate.ui.js",
+    "CoreLayoutGate.logic.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.72",
+    "react-native-safe-area-context": ">=4"
+  },
+  "scripts": {
+    "validate:json": "node -e \"JSON.parse(require('fs').readFileSync('package.json','utf8')); console.log('package.json OK')\"",
+    "validate:pack": "npm pack --silent >/dev/null && echo \"npm pack OK\""
+  }
+}
+
+
